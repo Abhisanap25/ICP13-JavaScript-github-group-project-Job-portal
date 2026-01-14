@@ -116,3 +116,25 @@ body {
     color: gray;
     font-size: 14px;
 }
+
+.apply-btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #4CAF50, #2E7D32);
+    color: white;
+    text-decoration: none; 
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    text-align: center;
+}
+
+.apply-btn:hover {
+    background: linear-gradient(135deg, #43A047, #1B5E20);
+    transform: scale(1.05);
+}
+
+.apply-btn:active {
+    transform: scale(0.98);
+}
