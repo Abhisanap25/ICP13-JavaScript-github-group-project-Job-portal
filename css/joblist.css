@@ -70,3 +70,25 @@ body {
         width: 100%;
     }
 }
+
+.jobs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+.job-card {
+    background: white;
+    padding: 20px;
+    border-radius: 14px;
+    position: relative;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+}
+
