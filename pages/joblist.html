@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Job Listings</title>
+    <link rel="stylesheet" href="/css/joblist.css">
+</head>
+<body>
+
+    <header class="job-header">
+    <div class="header-content">
+        <h1>Find Your <span>Dream Job</span></h1>
+        <p>Explore jobs & internships by category and skills</p>
+
+        <div class="header-controls">
+            <input 
+                type="text" 
+                id="searchInput" 
+                placeholder="Search job title or skill..."
+                onkeyup="searchJobs()"
+            >
+
+            <select id="filter" onchange="filterJobs()">
+                <option value="all">All Categories</option>
+                <option value="fullstack">Full Stack</option>
+                <option value="ai">AI</option>
+                <option value="ml">ML</option>
+                <option value="cyber">Cyber Security</option>
+                <option value="internship">Internship</option>
+            </select>
+        </div>
+    </div>
+</header>
+
+<section class="jobs">
+
+    <div class="job-card fullstack">
+        <span class="tag fullstack">Full Stack</span>
+        <h3>Full Stack Developer</h3>
+        <p>StartupHQ · Bangalore</p>
+        <button class="apply-btn" onclick="goToApply()">Apply Now</button>
+    </div>
+
+     
+    <div class="job-card fullstack">
+        <span class="tag fullstack">Full Stack</span>
+        <h3>Junior Full Stack Developer</h3>
+        <p>CodeWave · Pune</p>
+        <button class="apply-btn" onclick="goToApply()">Apply Now</button>
+    </div>
+
+    <div class="job-card fullstack">
+        <span class="tag fullstack">Full Stack</span>
+        <h3>MERN Stack Developer</h3>
+        <p>TechNova · Bangalore</p>
+        <button class="apply-btn" onclick="goToApply()">Apply Now</button>
+    </div>
+
+     <div class="job-card ai">
+        <span class="tag ai">AI</span>
+        <h3>AI Engineer</h3>
+        <p>AI Labs · Hyderabad</p>
+       <button class="apply-btn" onclick="goToApply()">Apply Now</button>
+    </div>
+
+    <div class="job-card ai">
+        <span class="tag ai">AI</span>
+        <h3>AI Research Engineer</h3>
+        <p>VisionAI · Chennai</p>
+        <button class="apply-btn" onclick="goToApply()">Apply Now</button>
+    </div>
+
+    <div class="job-card ai">
+         <span class="tag ai">AI</span>
+        <h3>AI Product Engineer</h3>
+        <p>NextGen AI · Hyderabad</p>
+        <button class="apply-btn" onclick="goToApply()">Apply Now</button>
+    </div>
+
+    <div class="job-card ml">
+        <span class="tag ml">ML</span>
+        <h3>Machine Learning Engineer</h3>
+        <p>DataCorp · Mumbai</p>
+        <button class="apply-btn" onclick="goToApply()">Apply Now</button>
+    </div>
+
+    <div class="job-card ml">
+        <span class="tag ml">ML</span>
+        <h3>Data Scientist</h3>
+        <p>DataWorks · Mumbai</p>
+       <button class="apply-btn" onclick="goToApply()">Apply Now</button>
+    </div>
+
+    <div class="job-card ml">
+        <span class="tag ml">ML</span>
+        <h3>Machine Learning Intern</h3>
+        <p>ML Labs · Remote</p>
+        <button class="apply-btn" onclick="goToApply()">Apply Now</button>
+    </div>
+
+     <div class="job-card cyber">
+        <span class="tag cyber">Cyber Security</span>
+        <h3>Cyber Security Analyst</h3>
+        <p>SecureTech · Delhi</p>
+        <button class="apply-btn" onclick="goToApply()">Apply Now</button>
+    </div>
+
+    <div class="job-card cyber">
+        <span class="tag cyber">Cyber Security</span>
+        <h3>Security Analyst</h3>
+        <p>CyberSafe · Noida</p>
+        <button class="apply-btn" onclick="goToApply()">Apply Now</button>
+    </div>
+
+    <div class="job-card cyber">
+        <span class="tag cyber">Cyber Security</span>
+        <h3>Ethical Hacker</h3>
+        <p>SecureNet · Remote</p>
+        <button class="apply-btn" onclick="goToApply()">Apply Now</button>
+    </div>
+</section>
+
+<section class="internship-section">
+    <h2>🔥 Latest Internships</h2>
+
+    <div class="internship-container">
+
+        <div class="internship-card">
+            <h3>Web Development Intern</h3>
+            <p class="company">TechSpark Solutions</p>
+
+            <div class="details">
+                <span>📍 Remote</span>
+                <span>⏳ 3 Months</span>
+                <span>💰 Stipend</span>
+            </div>
+
+            <p class="desc">
+                Work on real-world websites using HTML, CSS, JavaScript & React.
+            </p>
+
+            <button class="apply-btn" onclick="goToApply()">Apply Now</button>
+        </div>
+
+
+        <div class="internship-card">
+            <h3>AI / ML Intern</h3>
+            <p class="company">FutureAI Labs</p>
+
+            <div class="details">
+                <span>📍 Bangalore</span>
+                <span>⏳ 6 Months</span>
+                <span>💰 Paid</span>
+            </div>
+
+            <p class="desc">
+                Learn machine learning models, Python & real AI projects.
+            </p>
+
+           <button class="apply-btn" onclick="goToApply()">Apply Now</button>
+        </div>
+
+        <div class="internship-card">
+            <h3>Cyber Security Intern</h3>
+            <p class="company">SecureNet</p>
+
+            <div class="details">
+                <span>📍 Pune</span>
+                <span>⏳ 4 Months</span>
+                <span>💰 Unpaid</span>
+            </div>
+
+            <p class="desc">
+                Hands-on training in ethical hacking & network security.
+            </p>
+
+           <button class="apply-btn" onclick="goToApply()">Apply Now</button>
+        </div>
+
+    </div>
+</section>
+
+
+<script src="/js/joblist.js"></script>
+</body>
+</html>

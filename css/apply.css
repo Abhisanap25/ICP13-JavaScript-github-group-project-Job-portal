@@ -1,0 +1,82 @@
+body {
+    background: #f4f6f8;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 400px;
+    background: white;
+    padding: 20px;
+    margin: 40px auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 350px;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+textarea {
+    resize: none;
+    height: 70px;
+}
+
+button {
+    width: 100%;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0f5fd3;
+}
+
+#message {
+    text-align: center;
+    margin-top: 10px;
+    color: green;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 20px auto;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input, select, textarea {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 12px;
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+    .container {
+        width: 450px;
+    }
+}
