@@ -58,6 +58,31 @@ function addPost() {
   document.getElementById("postText").value = "";
 }
 
+let clickCount = 0;
+let clickTimer;
+
+document.getElementById("likeBtn").onclick = function () {
+  clickCount++;
+
+  clearTimeout(clickTimer);
+
+  clickTimer = setTimeout(() => {
+    const icon = document.getElementById("likeIcon");
+
+    if (clickCount === 1) {
+      icon.src = "../images/thumsup.png"; 
+    } 
+    else if (clickCount === 2) {
+      icon.src = "../images/heart.png"; 
+    } 
+    else if (clickCount >= 3) {
+      icon.src = "../images/insigthful.png";
+    }
+
+    clickCount = 0;
+  }, 400);
+};
+
 
 const data = JSON.parse(localStorage.getItem("profileData"));
 
