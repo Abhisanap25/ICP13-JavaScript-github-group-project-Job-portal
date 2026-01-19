@@ -66,3 +66,15 @@ It allows users to create profiles, post content, react to posts, explore job an
 - setTimeout / clearTimeout  
 
 ---
+
+## 🧠 Key JavaScript Concepts Used
+
+- DOM Manipulation  
+- Event Handling  
+- LocalStorage  
+- Functions  
+- Conditional Statements  
+- setTimeout & clearTimeout  
+- FileReader API  
+
+---
