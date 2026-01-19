@@ -31,12 +31,13 @@
      <!-- ---------left-side-content---------- -->
            <div class="ls-content">
                <div class="profile-cover">
-                   <img src="https://marketplace.canva.com/EAEmBit3KfU/1/0/1600w/canva-black-flatlay-photo-motivational-finance-quote-facebook-cover-myVl9DXwcjQ.jpg" alt="" width="100%">
+                   <img id="sidebarCover" src="https://marketplace.canva.com/EAEmBit3KfU/1/0/1600w/canva-black-flatlay-photo-motivational-finance-quote-facebook-cover-myVl9DXwcjQ.jpg" alt="" width="100%">
                    <div class="profile-pic">
-                         <img src="../images/user-home.png" alt="">
-                         <h1>User #xyz</h1>
-                         <h3>.</h3>
-                         <h3>..</h3>
+                         <img id="sidebarPic" src="../images/user-home.png" alt="">
+                         <h1 id="sidebarName">User #xyz</h1>
+                         <h3 id="sidebarEducation">.</h3>
+                         <h3 id="sidebarLocation">..</h3>
+
                    </div>
                 </div>
                 <div class="ls-activity">
@@ -69,7 +70,7 @@
 
                 <div class="create-post">
                     <div class="create-post-input">
-                        <img src="../images/user-home.png" alt="">
+                        <img id="middleProfilePic" src="../images/user-home.png" alt="">
                         <textarea rows="2" placeholder="Start a post"></textarea>
                     </div>
                     <div class="create-post-links">
