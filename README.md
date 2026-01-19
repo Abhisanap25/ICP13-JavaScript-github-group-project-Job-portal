@@ -105,3 +105,10 @@ It allows users to create profiles, post content, react to posts, explore job an
 © 2026 SkillSphere. All rights reserved.
 
 ---
+
+## 🙌 Acknowledgement
+
+This project was developed as a group assignment using HTML, CSS, and JavaScript.
+We emphasized teamwork, planning, and creating a structured website with proper navigation and user experience.
+
+---
