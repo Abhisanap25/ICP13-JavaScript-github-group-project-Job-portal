@@ -88,3 +88,15 @@ It allows users to create profiles, post content, react to posts, explore job an
 - Member 5 : vaishnavirashinkar
 
 ---
+
+## 📸 Screenshots
+
+## Login pade
+![Index page ](./images/readme-index.png)
+---
+
+ ## Home page
+![Home page ](./images/readme-home.png)
+
+
+---
